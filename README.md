@@ -174,4 +174,4 @@ DETAIL:  Key (id_aluno)=(50) is not present in table "alunos".
 **Resposta – o que aconteceu? Por quê?**
 A inserção foi **recusada com erro de chave estrangeira**. A coluna `emprestimos.id_aluno` tem a restrição `REFERENCES alunos(id)`, ou seja, só pode guardar números que **existam na tabela `alunos`**. Como o aluno **50 não existe** (só há alunos de 1 a 15), o banco bloqueia o INSERT para não permitir um empréstimo apontando para um aluno inexistente — nada foi inserido.
 
-*(Em MySQL o mesmo INSERT geraria o erro **1452** – "Cannot add or update a child row: a foreign key constraint fails", pela mesma causa.)*
+*(Em MySQL o mesmo INSERT geraria o erro **1452** – "Cannot add or update a child row: a foreign key constraint fails", pela mesma causa.)*.

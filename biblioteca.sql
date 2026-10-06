@@ -46,3 +46,5 @@ INSERT INTO emprestimos (id, livro, id_aluno) VALUES
 
 SELECT setval('alunos_id_seq', 15);
 SELECT setval('emprestimos_id_seq', 10);
+
+

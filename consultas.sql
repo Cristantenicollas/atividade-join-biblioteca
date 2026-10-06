@@ -23,3 +23,5 @@ WHERE e.id IS NULL;
 -- 5) Tentar registrar empréstimo para o aluno 50 (não existe)
 -- Esperado: erro de chave estrangeira (foreign key violation)
 INSERT INTO emprestimos (livro, id_aluno) VALUES ('Turma da Mônica', 50);
+
+
